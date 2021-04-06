@@ -1,29 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Serilog.Settings.AppSettings" Version="2.2.2" />
     <PackageReference Include="SerilogWeb.Classic" Version="5.0.61" />
-    <PackageReference Include="Sitecore.Kernel.NoReferences" Version="8.2.160729">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Sitecore.Logging.NoReferences" Version="8.2.160729">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
+    <PackageReference Include="Sitecore.Kernel" Version="9.2.0" />
+    <PackageReference Include="Sitecore.Logging" Version="9.2.0" />
   </ItemGroup>
-
   <ItemGroup>
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>bin\Debug\net452\Sitecore.Kernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Sitecore.Logging">
-      <HintPath>bin\Debug\net452\Sitecore.Logging.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
   </ItemGroup>
 
