@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>messagecanguru</id>
+    <version>1.0.0.0</version>
+    <title>Message canguru</title>
+    <authors>Christian James</authors>
+    <owners>Christian James</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Message canguru transfers log message to logstash via serilog</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright 2021</copyright>
+    <tags>serilog log sitecore</tags>
+    <contentFiles>
+      <files include=".\MessageCanguru\App_Config\Include\MessageCanguru\SitecoreToSerilogBridgeAppender.config" buildAction="None" copyToOutput="true" />
+      <files include=".\MessageCanguru\App_Config\Include\MessageCanguru\UdpLogstashSink.config" buildAction="None" copyToOutput="true" />
+    </contentFiles>
+  </metadata>
+  
+  <files>
+        <file src=".\Automation\output\MessageCanguru.dll" target="lib/net452" />
+        <file src=".\Automation\output\MessageCanguru.pdb" target="lib/net452" />
+        <file src=".\Automation\output\Serilog*.dll" target="lib/net452" />
+        <file src=".\MessageCanguru\App_Config\Include\MessageCanguru\SitecoreToSerilogBridgeAppender.config" target="content/App_Config/Include" />
+        <file src=".\MessageCanguru\App_Config\Include\MessageCanguru\UdpLogstashSink.config" target="content/App_Config/Include" />
+  </files>
+  
+
+</package>
